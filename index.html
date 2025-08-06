@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="msg">Baking...</p>
+
+        <script>
+            function bakeCake(callback)  {
+                setTimeout(() => {
+                    callback("🎂Cake is ready!🍰");
+                
+                }, 2000);
+            }
+
+            bakeCake(function(msg) {
+                document.getElementById("msg").innerHTML = msg;
+            });
+        </script>
+    </body>
+</html>
